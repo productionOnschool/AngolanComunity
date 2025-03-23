@@ -20,11 +20,12 @@ class MemberRegistrationMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Novo Registro de Membro')
+        $subject = 'Novo Registro de Membro - ' . $this->data['nome'];
+
+        return $this->subject($subject)
             ->view('emails.member_registration')
             ->with(['data' => $this->data])
             ->withSwiftMessage(function ($message) {
-                // Inline CSS using the package
                 $inliner = new LaravelMailCssInliner();
                 $inliner->inlineCss($message);
             });

@@ -10,6 +10,8 @@ class MemberRegistrationController extends Controller
 {
     public function submit(Request $request)
     {
+
+        return $request->all();
         // Validate incoming data
         $data = $request->validate([
             'nome' => 'required|string|max:255',

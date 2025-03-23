@@ -26,7 +26,6 @@
 
         #logo img {
             width: 50mm;
-            /* Adjusted for PDF visibility */
         }
 
         h2 {
@@ -58,7 +57,6 @@
         td {
             padding: 2mm;
             border: 1px solid #C1CED9;
-            /* Added borders for structure */
         }
 
         th {
@@ -78,7 +76,6 @@
         #signature-section {
             margin-top: 5mm;
             overflow: hidden;
-            /* Replace flex with simpler layout */
         }
 
         .signature-block {
@@ -106,7 +103,6 @@
 <body>
     <header>
         <div id="logo">
-            <!-- <img src="{{ public_path('images/logo.png') }}" alt="Comunidade de Angola em Washington"> -->
             <img src="https://angolancommunity.org/wp-content/uploads/2024/04/logo-1.png.webp"
                 alt="Comunidade de Angola em Washington">
         </div>
@@ -151,6 +147,10 @@
             <tr>
                 <td class="label">Cidade</td>
                 <td>{{ $data['cidade'] }}</td>
+            </tr>
+            <tr>
+                <td class="label">Estado</td>
+                <td>{{ $data['estado'] }}</td>
             </tr>
         </table>
         <div id="signature-section">
