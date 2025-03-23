@@ -111,8 +111,8 @@
     <main>
         <div id="community-info">
             <div>Comunidade de Angola em Washington</div>
-            <div>1234 Angolan Way, Washington, DC 20001, USA</div>
-            <div>(202) 555-0123</div>
+            <div>13118 SE 228th Pl Kent , Washington,WA 98031, USA</div>
+            <div>(206) 383-2188</div>
             <div><a href="mailto:info@angolancommunity.org">info@angolancommunity.org</a></div>
         </div>
         <table>
